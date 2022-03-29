@@ -14,8 +14,7 @@ console.log(screens.length);
 console.log('Стоимость версти экранов ' + screenPrice + ' рублей');
 console.log('Стоимость разработки сайта ' + fullPrice + ' рублей');
 
-let screensArray = screens.toLowerCase();
-screensArray = screensArray.split(', ');
+let screensArray = screens.toLowerCase().split(', ');
 console.log(screensArray);
 
 let perRollback = fullPrice * (rollback / 100);
