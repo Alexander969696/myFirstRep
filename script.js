@@ -40,19 +40,12 @@ function getFullPrice (screenPrice, allServicePrices) {
 }
 
 const getTitle = function (title) {
-    let newStr = '';
     if (title.length == 0) return 'Вы не ввели название проекта';
-    for (let i = 0; i < title.length; i++) {
-        if (title[i] === ' ') {
-            continue;
-        } else {
-            newStr += title.toLowerCase().slice(i);
-            break;
-        }
-    }
-    return title = newStr[0].toUpperCase() + newStr.slice(1);
-}
+    title = title.trim();
+    title = title[0].toUpperCase() + title.slice(1).toLowerCase();
 
+    return title
+}
 const getServicePercentPrice = function (fullPrice, rollback) {
     return fullPrice - (fullPrice*(rollback/100));
 }
