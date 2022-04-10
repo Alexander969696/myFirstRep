@@ -1,5 +1,19 @@
 'use strict'
 
+const title = document.getElementsByTagName('h1')[0];
+const start = document.getElementsByClassName('handler_btn')[0];
+const reset = document.getElementsByClassName('handler_btn')[1];
+const plusBtn = document.querySelector('.screen-btn');
+const otherItemsPercent = document.querySelectorAll('.other-items.percent');
+const otherItemsNumber = document.querySelectorAll('.other-items.number');
+const rollbackInput = document.querySelector('.rollback input');
+const rollbackPercent = document.querySelector('.rollback span');
+const totalInput1 = document.getElementsByClassName('total-input')[0];
+const totalInput2 = document.getElementsByClassName('total-input')[1];
+const totalInput3 = document.getElementsByClassName('total-input')[2];
+const totalInput4 = document.getElementsByClassName('total-input')[3];
+const totalInput5 = document.getElementsByClassName('total-input')[4];
+let screens = document.querySelectorAll('.screen');
 
 const appData = {
     title: '',
@@ -131,4 +145,4 @@ const checkNum = function (question) {
     return answer;
 }
 
-appData.start();
+// appData.start();
