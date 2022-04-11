@@ -1,18 +1,18 @@
 'use strict'
 
 const title = document.getElementsByTagName('h1')[0];
-const start = document.getElementsByClassName('handler_btn')[0];
-const reset = document.getElementsByClassName('handler_btn')[1];
+const startBtn = document.getElementsByClassName('handler_btn')[0];
+const resetBtn = document.getElementsByClassName('handler_btn')[1];
 const plusBtn = document.querySelector('.screen-btn');
-const otherItemsPercent = document.querySelectorAll('.other-items.percent');
-const otherItemsNumber = document.querySelectorAll('.other-items.number');
+const controlsItemsPercent = document.querySelectorAll('.other-items.percent');
+const controlsItemsNumber = document.querySelectorAll('.other-items.number');
 const rollbackInput = document.querySelector('.rollback input');
-const rollbackPercent = document.querySelector('.rollback span');
-const totalInput1 = document.getElementsByClassName('total-input')[0];
-const totalInput2 = document.getElementsByClassName('total-input')[1];
-const totalInput3 = document.getElementsByClassName('total-input')[2];
-const totalInput4 = document.getElementsByClassName('total-input')[3];
-const totalInput5 = document.getElementsByClassName('total-input')[4];
+const rollbackPercentText = document.querySelector('.rollback span');
+const totalPriceInput = document.getElementsByClassName('total-input')[0];
+const amountScreensInput = document.getElementsByClassName('total-input')[1];
+const extraPriceInput = document.getElementsByClassName('total-input')[2];
+const totalFullPriceInput = document.getElementsByClassName('total-input')[3];
+const mainPriceInput = document.getElementsByClassName('total-input')[4];
 let screens = document.querySelectorAll('.screen');
 
 const appData = {
